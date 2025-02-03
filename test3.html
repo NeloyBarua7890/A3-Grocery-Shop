@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nature's Platter</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      /* Custom CSS for overlay effect */
+      .overlay-container {
+        position: relative; /* Needed for absolute positioning of the overlay */
+      }
+
+      .overlay {
+        position: absolute;
+        bottom: 0; /* Position at the top of the footer */
+        left: 50%;
+        transform: translateX(-50%); /* Center horizontally */
+        width: 100%; /* Or a specific width */
+        /* Add background color, padding, etc. as needed */
+        background-color: white; /* Example background */
+        padding: 20px; /* Example padding */
+        border-radius: 8px 8px 0 0; /* Rounded top corners */
+        box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+        z-index: 50; /* Ensure it's above the footer */
+      }
+    </style>
+  </head>
+  <body class="bg-green-50">
+    <div class="overlay-container">
+      <section class="container mx-auto p-8 mt-10">
+        <div
+          class="bg-white rounded-lg shadow-md p-8 flex flex-col md:flex-row"
+        >
+          <div class="md:w-1/2 mr-8 mb-6 md:mb-0">
+            <img
+              src="your-image.jpg"
+              alt="Grocery Basket"
+              class="rounded-lg w-full"
+            />
+          </div>
+
+          <div class="md:w-1/2">
+            <h2 class="text-2xl font-semibold mb-4">Get Grocery News!</h2>
+            <p class="text-gray-600 mb-6">
+              Exclusive training tips, tricks, product deals and more.
+            </p>
+            <div class="flex">
+              <input
+                type="email"
+                placeholder="Enter email"
+                class="w-full border border-gray-300 rounded-md px-4 py-2 mr-2 focus:outline-none focus:ring-2 focus:ring-green-500"
+              />
+              <button
+                class="bg-green-500 text-white rounded-md px-6 py-2 hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-green-300"
+              >
+                Subscribe
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="bg-green-700 text-white py-4">
+        <div class="container mx-auto flex justify-between items-center">
+          <div class="flex items-center">
+            <div class="mr-4">
+              <h3 class="text-lg font-semibold">nature's platter</h3>
+              <p class="text-sm">
+                Discover a world of treats, toys, and essentials handpicked for
+                your furry friends
+              </p>
+            </div>
+          </div>
+
+          <div class="flex space-x-6">
+            <a href="#" class="hover:underline">Product</a>
+            <a href="#" class="hover:underline">Services</a>
+            <a href="#" class="hover:underline">Contact Us</a>
+          </div>
+
+          <div class="flex space-x-4">
+            <a href="#"
+              ><svg
+                class="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 002 2v10a2 2 0 002 2z"
+                ></path></svg
+            ></a>
+            <a href="#"
+              ><svg
+                class="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M17 20.5v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4m2 4.5l5.03-3.35a1.1 1.1 0 00-.72-1.04v-2.06a1.1 1.1 0 00-.62-.98l-1-1a4.53 4.53 0 00-3-1.5A4.53 4.53 0 008 11.46l-1 1a1.1 1.1 0 00-.62.98v2.06a1.1 1.1 0 00-.72 1.04L9 24.5m8-11.5c-2.34 0-4.2 1.86-4.2 4.2s1.86 4.2 4.2 4.2c2.34 0 4.2-1.86 4.2-4.2s-1.86-4.2-4.2-4.2z"
+                ></path></svg
+            ></a>
+            <a href="#"
+              ><svg
+                class="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0H8m4 7v3m-3 0h6m-3-3V11m-3 0h6"
+                ></path></svg
+            ></a>
+          </div>
+        </div>
+      </footer>
+
+      <div class="overlay">
+        <div class="container mx-auto">
+          <p class="text-gray-700">
+            Additional information or call to action here.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
